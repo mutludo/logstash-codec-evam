@@ -1,0 +1,46 @@
+{"message":"this is plain message","@version":"1","@timestamp":"2015-10-12T11:29:37.104Z","host":"mert.local","path":"/Users/mertnuhoglu/projects/study/study/logstash/plain.log"}
+{"message":"this is second message","@version":"1","@timestamp":"2015-10-12T11:29:37.106Z","host":"mert.local","path":"/Users/mertnuhoglu/projects/study/study/logstash/plain.log"}
+{"message":"hello istanbul","@version":"1","@timestamp":"2015-10-12T11:29:37.106Z","host":"mert.local","path":"/Users/mertnuhoglu/projects/study/study/logstash/plain.log"}
+{"message":"hello ankara","@version":"1","@timestamp":"2015-10-12T11:29:37.106Z","host":"mert.local","path":"/Users/mertnuhoglu/projects/study/study/logstash/plain.log"}
+{"message":"hello trabzon","@version":"1","@timestamp":"2015-10-12T11:29:37.107Z","host":"mert.local","path":"/Users/mertnuhoglu/projects/study/study/logstash/plain.log"}
+{"message":"hello santiago","@version":"1","@timestamp":"2015-10-12T11:29:37.107Z","host":"mert.local","path":"/Users/mertnuhoglu/projects/study/study/logstash/plain.log"}
+{"message":"gracias mundo","@version":"1","@timestamp":"2015-10-12T11:29:37.107Z","host":"mert.local","path":"/Users/mertnuhoglu/projects/study/study/logstash/plain.log"}
+{"message":"gracias despues","@version":"1","@timestamp":"2015-10-12T11:29:37.107Z","host":"mert.local","path":"/Users/mertnuhoglu/projects/study/study/logstash/plain.log"}
+{"message":"this is plain message","@version":"1","@timestamp":"2015-10-12T11:29:42.140Z","host":"mert.local","path":"/Users/mertnuhoglu/projects/study/study/logstash/plain.log"}
+{"message":"this is second message","@version":"1","@timestamp":"2015-10-12T11:29:42.141Z","host":"mert.local","path":"/Users/mertnuhoglu/projects/study/study/logstash/plain.log"}
+{"message":"hello istanbul","@version":"1","@timestamp":"2015-10-12T11:29:42.141Z","host":"mert.local","path":"/Users/mertnuhoglu/projects/study/study/logstash/plain.log"}
+{"message":"hello ankara","@version":"1","@timestamp":"2015-10-12T11:29:42.141Z","host":"mert.local","path":"/Users/mertnuhoglu/projects/study/study/logstash/plain.log"}
+{"message":"hello trabzon","@version":"1","@timestamp":"2015-10-12T11:29:42.142Z","host":"mert.local","path":"/Users/mertnuhoglu/projects/study/study/logstash/plain.log"}
+{"message":"hello santiago","@version":"1","@timestamp":"2015-10-12T11:29:42.142Z","host":"mert.local","path":"/Users/mertnuhoglu/projects/study/study/logstash/plain.log"}
+{"message":"gracias mundo","@version":"1","@timestamp":"2015-10-12T11:29:42.143Z","host":"mert.local","path":"/Users/mertnuhoglu/projects/study/study/logstash/plain.log"}
+{"message":"gracias despues","@version":"1","@timestamp":"2015-10-12T11:29:42.144Z","host":"mert.local","path":"/Users/mertnuhoglu/projects/study/study/logstash/plain.log"}
+{"message":"gracias mundo2","@version":"1","@timestamp":"2015-10-12T11:29:42.144Z","host":"mert.local","path":"/Users/mertnuhoglu/projects/study/study/logstash/plain.log"}
+{"message":"this is plain message","@version":"1","@timestamp":"2015-10-12T14:06:17.044Z","host":"mert.local","path":"/Users/mertnuhoglu/projects/study/study/logstash/plain.log"}
+{"message":"this is second message","@version":"1","@timestamp":"2015-10-12T14:06:17.046Z","host":"mert.local","path":"/Users/mertnuhoglu/projects/study/study/logstash/plain.log"}
+{"message":"hello istanbul","@version":"1","@timestamp":"2015-10-12T14:06:17.047Z","host":"mert.local","path":"/Users/mertnuhoglu/projects/study/study/logstash/plain.log"}
+{"message":"hello ankara","@version":"1","@timestamp":"2015-10-12T14:06:17.047Z","host":"mert.local","path":"/Users/mertnuhoglu/projects/study/study/logstash/plain.log"}
+{"message":"hello trabzon","@version":"1","@timestamp":"2015-10-12T14:06:17.047Z","host":"mert.local","path":"/Users/mertnuhoglu/projects/study/study/logstash/plain.log"}
+{"message":"hello santiago","@version":"1","@timestamp":"2015-10-12T14:06:17.048Z","host":"mert.local","path":"/Users/mertnuhoglu/projects/study/study/logstash/plain.log"}
+{"message":"gracias mundo","@version":"1","@timestamp":"2015-10-12T14:06:17.048Z","host":"mert.local","path":"/Users/mertnuhoglu/projects/study/study/logstash/plain.log"}
+{"message":"gracias despues","@version":"1","@timestamp":"2015-10-12T14:06:17.048Z","host":"mert.local","path":"/Users/mertnuhoglu/projects/study/study/logstash/plain.log"}
+{"message":"gracias mundo2","@version":"1","@timestamp":"2015-10-12T14:06:17.049Z","host":"mert.local","path":"/Users/mertnuhoglu/projects/study/study/logstash/plain.log"}
+{"message":"gracias mundo3","@version":"1","@timestamp":"2015-10-12T14:06:17.049Z","host":"mert.local","path":"/Users/mertnuhoglu/projects/study/study/logstash/plain.log"}
+{"message":"this is plain message","@version":"1","@timestamp":"2015-10-12T14:07:24.338Z","host":"mert.local","path":"/Users/mertnuhoglu/projects/study/study/logstash/plain.log"}
+{"message":"this is second message","@version":"1","@timestamp":"2015-10-12T14:07:24.340Z","host":"mert.local","path":"/Users/mertnuhoglu/projects/study/study/logstash/plain.log"}
+{"message":"hello istanbul","@version":"1","@timestamp":"2015-10-12T14:07:24.340Z","host":"mert.local","path":"/Users/mertnuhoglu/projects/study/study/logstash/plain.log"}
+{"message":"hello ankara","@version":"1","@timestamp":"2015-10-12T14:07:24.340Z","host":"mert.local","path":"/Users/mertnuhoglu/projects/study/study/logstash/plain.log"}
+{"message":"hello trabzon","@version":"1","@timestamp":"2015-10-12T14:07:24.341Z","host":"mert.local","path":"/Users/mertnuhoglu/projects/study/study/logstash/plain.log"}
+{"message":"hello santiago","@version":"1","@timestamp":"2015-10-12T14:07:24.342Z","host":"mert.local","path":"/Users/mertnuhoglu/projects/study/study/logstash/plain.log"}
+{"message":"gracias mundo","@version":"1","@timestamp":"2015-10-12T14:07:24.342Z","host":"mert.local","path":"/Users/mertnuhoglu/projects/study/study/logstash/plain.log"}
+{"message":"gracias despues","@version":"1","@timestamp":"2015-10-12T14:07:24.343Z","host":"mert.local","path":"/Users/mertnuhoglu/projects/study/study/logstash/plain.log"}
+{"message":"gracias mundo2","@version":"1","@timestamp":"2015-10-12T14:07:24.343Z","host":"mert.local","path":"/Users/mertnuhoglu/projects/study/study/logstash/plain.log"}
+{"message":"gracias mundo3","@version":"1","@timestamp":"2015-10-12T14:07:24.343Z","host":"mert.local","path":"/Users/mertnuhoglu/projects/study/study/logstash/plain.log"}
+{"message":"gracias mundo4","@version":"1","@timestamp":"2015-10-12T14:07:24.344Z","host":"mert.local","path":"/Users/mertnuhoglu/projects/study/study/logstash/plain.log"}
+{"message":"hello trabzon","@version":"1","@timestamp":"2015-10-12T14:09:53.991Z","host":"mert.local","path":"/Users/mertnuhoglu/projects/study/study/logstash/plain.log"}
+{"message":"hello santiago","@version":"1","@timestamp":"2015-10-12T14:09:53.997Z","host":"mert.local","path":"/Users/mertnuhoglu/projects/study/study/logstash/plain.log"}
+{"message":"gracias mundo","@version":"1","@timestamp":"2015-10-12T14:09:53.997Z","host":"mert.local","path":"/Users/mertnuhoglu/projects/study/study/logstash/plain.log"}
+{"message":"gracias despues","@version":"1","@timestamp":"2015-10-12T14:09:53.997Z","host":"mert.local","path":"/Users/mertnuhoglu/projects/study/study/logstash/plain.log"}
+{"message":"gracias mundo2","@version":"1","@timestamp":"2015-10-12T14:09:54.000Z","host":"mert.local","path":"/Users/mertnuhoglu/projects/study/study/logstash/plain.log"}
+{"message":"gracias mundo3","@version":"1","@timestamp":"2015-10-12T14:09:54.000Z","host":"mert.local","path":"/Users/mertnuhoglu/projects/study/study/logstash/plain.log"}
+{"message":"gracias mundo4","@version":"1","@timestamp":"2015-10-12T14:09:54.001Z","host":"mert.local","path":"/Users/mertnuhoglu/projects/study/study/logstash/plain.log"}
+{"message":"gracias mundo4","@version":"1","@timestamp":"2015-10-12T14:09:54.001Z","host":"mert.local","path":"/Users/mertnuhoglu/projects/study/study/logstash/plain.log"}

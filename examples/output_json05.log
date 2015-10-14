@@ -1,0 +1,22 @@
+{"student":"hamster maker","school":"mickey","@version":"1","@timestamp":"2015-10-12T11:22:11.290Z","host":"mert.local","path":"/Users/mertnuhoglu/projects/study/study/logstash/json.log"}
+{"student":"mouse maker","school":"chrome","@version":"1","@timestamp":"2015-10-12T11:22:11.294Z","host":"mert.local","path":"/Users/mertnuhoglu/projects/study/study/logstash/json.log"}
+{"student":"elephant maker","school":"chrome","@version":"1","@timestamp":"2015-10-12T11:22:11.295Z","host":"mert.local","path":"/Users/mertnuhoglu/projects/study/study/logstash/json.log"}
+{"student":"contesse","school":"paris","@version":"1","@timestamp":"2015-10-12T11:22:11.297Z","host":"mert.local","path":"/Users/mertnuhoglu/projects/study/study/logstash/json.log"}
+{"student":"hamster maker","school":"mickey","@version":"1","@timestamp":"2015-10-12T11:22:28.374Z","host":"mert.local","path":"/Users/mertnuhoglu/projects/study/study/logstash/json.log"}
+{"student":"mouse maker","school":"chrome","@version":"1","@timestamp":"2015-10-12T11:22:28.374Z","host":"mert.local","path":"/Users/mertnuhoglu/projects/study/study/logstash/json.log"}
+{"student":"elephant maker","school":"chrome","@version":"1","@timestamp":"2015-10-12T11:22:28.375Z","host":"mert.local","path":"/Users/mertnuhoglu/projects/study/study/logstash/json.log"}
+{"student":"contesse","school":"paris","@version":"1","@timestamp":"2015-10-12T11:22:28.376Z","host":"mert.local","path":"/Users/mertnuhoglu/projects/study/study/logstash/json.log"}
+{"student":"dukesse","school":"paris","@version":"1","@timestamp":"2015-10-12T11:22:28.378Z","host":"mert.local","path":"/Users/mertnuhoglu/projects/study/study/logstash/json.log"}
+{"student":"hamster maker","school":"mickey","@version":"1","@timestamp":"2015-10-12T11:27:21.697Z","host":"mert.local","path":"/Users/mertnuhoglu/projects/study/study/logstash/json.log"}
+{"student":"mouse maker","school":"chrome","@version":"1","@timestamp":"2015-10-12T11:27:21.700Z","host":"mert.local","path":"/Users/mertnuhoglu/projects/study/study/logstash/json.log"}
+{"student":"elephant maker","school":"chrome","@version":"1","@timestamp":"2015-10-12T11:27:21.701Z","host":"mert.local","path":"/Users/mertnuhoglu/projects/study/study/logstash/json.log"}
+{"student":"contesse","school":"paris","@version":"1","@timestamp":"2015-10-12T11:27:21.702Z","host":"mert.local","path":"/Users/mertnuhoglu/projects/study/study/logstash/json.log"}
+{"student":"dukesse","school":"paris","@version":"1","@timestamp":"2015-10-12T11:27:21.702Z","host":"mert.local","path":"/Users/mertnuhoglu/projects/study/study/logstash/json.log"}
+{"student":"s5","school":"paris","@version":"1","@timestamp":"2015-10-12T11:27:21.703Z","host":"mert.local","path":"/Users/mertnuhoglu/projects/study/study/logstash/json.log"}
+{"student":"hamster maker","school":"mickey","@version":"1","@timestamp":"2015-10-12T11:27:32.754Z","host":"mert.local","path":"/Users/mertnuhoglu/projects/study/study/logstash/json.log"}
+{"student":"mouse maker","school":"chrome","@version":"1","@timestamp":"2015-10-12T11:27:32.755Z","host":"mert.local","path":"/Users/mertnuhoglu/projects/study/study/logstash/json.log"}
+{"student":"elephant maker","school":"chrome","@version":"1","@timestamp":"2015-10-12T11:27:32.762Z","host":"mert.local","path":"/Users/mertnuhoglu/projects/study/study/logstash/json.log"}
+{"student":"contesse","school":"paris","@version":"1","@timestamp":"2015-10-12T11:27:32.763Z","host":"mert.local","path":"/Users/mertnuhoglu/projects/study/study/logstash/json.log"}
+{"student":"dukesse","school":"paris","@version":"1","@timestamp":"2015-10-12T11:27:32.763Z","host":"mert.local","path":"/Users/mertnuhoglu/projects/study/study/logstash/json.log"}
+{"student":"s5","school":"paris","@version":"1","@timestamp":"2015-10-12T11:27:32.764Z","host":"mert.local","path":"/Users/mertnuhoglu/projects/study/study/logstash/json.log"}
+{"student":"s6","school":"paris","@version":"1","@timestamp":"2015-10-12T11:27:32.765Z","host":"mert.local","path":"/Users/mertnuhoglu/projects/study/study/logstash/json.log"}

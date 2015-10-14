@@ -101,6 +101,14 @@ def test_find_key_in_hash
   ihash3(data, "actor")
 end
 
+def split_path(dict, path)
+  keys = path.split('.')
+  for k in keys
+    dict = dict[k]
+  end
+  dict
+end
+
 def find_actor(dict, actor_path)
   actor_id = dict[actor_path]
   actor_id
@@ -108,7 +116,12 @@ end
 
 def test_actor
   data = {"actor" => "001", "foo" => "bar", "baz" => {"bah" => ["a", "b", "c"]}}
-  puts find_actor(data, "actor")
+  # puts find_actor(data, "actor")
+  split_path(data, 'actor')
+  data = {"a" => {"actor" => "001"}, "foo" => "bar", "baz" => {"bah" => ["a", "b", "c"]}}
+  split_path(data, 'a.actor')
+  data = {"a" => {"b" => {"actor" => "001"}}, "foo" => "bar", "baz" => {"bah" => ["a", "b", "c"]}}
+  split_path(data, 'a.b.actor')
 end
 
 def test_flattening

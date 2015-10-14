@@ -1,0 +1,79 @@
+[13/10/15 01:30:10] Can Alhas: Eger Codec yapisi Input a bagliysa
+[13/10/15 01:30:20] Can Alhas: bayagi zorlar o zaman
+[13/10/15 01:30:34] Can Alhas: yani her input icin codec mi yazilacak
+[13/10/15 01:31:05] Mert Nuhoglu: Galiba öyle Can Bey
+[13/10/15 01:31:13] Can Alhas: Yapma yaa
+[13/10/15 01:31:19] Mert Nuhoglu: Ben de öyle anlamıştım, logstash'in yapısını ilk dinlediğimde :)
+
+Fakat sorun şu, decode adlı bir fonksiyon var. Bu fonksiyon, girdiyi okuyup, bir Event objesi oluşturuyor. Bu decode fonksiyonuna gönderilen girdi, sadece ilk input'tan gelen veri oluyor. Daha sonra Event objesi oluşturulduktan sonra, bir daha decode bunu handle etmiyor.
+[13/10/15 01:31:22] Can Alhas: cok sacma olmus
+[13/10/15 01:31:48] Mert Nuhoglu: Evet, o yüzden bayağı uzun sürdü hataları çözmem
+[13/10/15 01:32:23] Mert Nuhoglu: Size sabah bahsettiğim hatanın kaynağı da, logstash'in çalışma şeklini bu şekilde varsaymış olmamdı.
+[13/10/15 01:32:35] Mert Nuhoglu: Fakat temel sorun "decode" fonksiyonu sadece, ilk input için çalışıyor
+[13/10/15 01:32:43] Mert Nuhoglu: bir daha aralarda decode yapamıyorsunuz
+[13/10/15 01:32:45] Can Alhas: Tam anlayamadim
+[13/10/15 01:32:51] Can Alhas: ilk input icin ne demek
+[13/10/15 01:33:02] Mert Nuhoglu: yani csv dosyasını input olarak aldınız diyelim
+[13/10/15 01:33:12] Can Alhas: evet
+[13/10/15 01:33:35] Mert Nuhoglu: o csv dosyasını ilk okurken codec kullanırsanız, orada decode() çağrılıyor
+[13/10/15 01:33:48] Mert Nuhoglu: sonra filter veya output işlemlerinde çağrılmıyor
+[13/10/15 01:33:59] Mert Nuhoglu: filter'larda zaten codec kullanılmıyor
+[13/10/15 01:34:26] Can Alhas: hmmm yani doyayi ilk acmadan codec yapiyor sonra aciyor
+[13/10/15 01:34:31] Mert Nuhoglu: output'ta da string output üretiliyor ve bu output, input'tan gelen event objesine bağlı
+[13/10/15 01:34:34] Can Alhas: her satir icin yapmiyor
+[13/10/15 01:36:06] Mert Nuhoglu: her satır için de yapabilirsiniz, fakat csv dosyasının her satırını bir kez parse ettiniz ve bir Event objesi oluşturdunuz mu, bir daha o event objesindeki alanların çıktısındaki veri yapısını değiştiremiyorsunuz
+[13/10/15 01:36:23] Mert Nuhoglu: yanlış veya eksik anlamış olabilirim, o yüzden bir teyit ettirmemizde fayda var
+[13/10/15 01:36:29] Can Alhas: A codec plugin changes the data representation of an event. Codecs are essentially stream filters that can operate as part of an input or output.
+[13/10/15 01:37:00] Mert Nuhoglu: evet, ben de o cümleden dolayı çıktı formatını istediğimiz yerde değiştirebileceğimizi zannetmiştim
+[13/10/15 01:37:27] Mert Nuhoglu: ama özet olarak her pipeline konfigürasyonda sadece bir tane codec işliyor
+[13/10/15 01:37:36] Mert Nuhoglu: en fazla bir tane, hiç olmayadabilir
+[13/10/15 01:38:54] Mert Nuhoglu: eğer önemli bir meseleyse, ben bunu bir soru olarak stackoverflow'da sorayım
+[13/10/15 01:39:02] Mert Nuhoglu: oradan sağlam bilgi alırız
+[13/10/15 01:40:48] Can Alhas: Bence sor hocam
+[13/10/15 01:41:13] Mert Nuhoglu: ok, şu actor id problemini bir halledeyim, sonra sorayım
+[13/10/15 01:41:20] Can Alhas: tamam
+[13/10/15 01:46:08] Can Alhas: ababa codec i output ta kullansak ne olur
+[13/10/15 01:46:57] Mert Nuhoglu: denedim, o zaman decode fonksiyonu hiç çağrılmıyor; encode çağrılıyor sadece
+[13/10/15 01:47:39] Can Alhas: hmm
+[13/10/15 01:48:02] Mert Nuhoglu: örnek kodlarım var, test edebileceğiniz, bir sn bekleyin
+[13/10/15 01:49:10] Mert Nuhoglu: mesela şu örnekte, logstash'in kendi codec eklentileri olan json ile okuyorum, plain ile çıktılıyorum:
+[13/10/15 01:49:13] Mert Nuhoglu: input {
+	file {
+		path => "/Users/mertnuhoglu/projects/study/study/logstash/json.log"
+		start_position => beginning 
+		codec => json {}
+	}
+}
+output {
+	elasticsearch {
+		protocol => "http"
+		host => localhost
+		index => plain04
+		codec => plain{}
+	}
+	stdout {
+		codec => plain{ }
+	}
+	file {
+		path => "/Users/mertnuhoglu/projects/study/study/logstash/output_plain04.log"
+		codec => plain{ }
+		message_format => "%{message}"
+	}
+}
+[13/10/15 01:49:48] Mert Nuhoglu: normalde, ne beklersiniz? çıktı codec'indeki plain eklentisinin, normalde çalıştığı gibi çalışmasını
+[13/10/15 01:50:00] Mert Nuhoglu: ama öyle olmuyor. bu yüzden üretilen çıktı şu şekilde oluyor:
+[13/10/15 01:50:07] Mert Nuhoglu: %{message}
+%{message}
+%{message}
+[13/10/15 01:50:59] Can Alhas: Bir enayilik var bunlarin yapilarinda
+[13/10/15 01:51:30] Mert Nuhoglu: evet, fazla iş yükü gibi görünüyor ama muhtemelen bir nedeni vardır belki bizim şu an göremediğimiz
+[13/10/15 01:51:55] Mert Nuhoglu: ama belki de dizayn hatasıdır
+[13/10/15 01:52:04] Mert Nuhoglu: çünkü mantık olarak şu da bana hatalı görünüyor:
+[13/10/15 01:52:12] Mert Nuhoglu: codec ve filter diye iki farklı eklenti türü var
+[13/10/15 01:52:35] Mert Nuhoglu: halbuki, codec'in yaptığı iş de, filter'ın yaptığı iş de aynı yapıda tanımlanabilmeli
+[13/10/15 01:52:54] Can Alhas: aynen
+[13/10/15 01:53:06] Can Alhas: stackoverflow da bir yazalim bakalim
+[13/10/15 01:53:15] Mert Nuhoglu: çok sade bir şekilde: input -> filter -> filter -> ... -> filter -> output şeklinde çalışmasını beklerdim
+[13/10/15 01:53:22] Can Alhas: sen mi yazarsin
+[13/10/15 01:53:29] Mert Nuhoglu: olur ben yazarım
+[13/10/15 01:53:39] Mert Nuhoglu: ama şu aktör sorununu  bitiremedim daha

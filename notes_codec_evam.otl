@@ -1,0 +1,18 @@
+options
+	problem due to nestednes
+	problem due to context
+		falsify: make a second working test
+	why is subject not initialized outside?
+		debug it there
+		subject = LogStash::Codecs::Evam.new
+			allowed
+		works in debugger
+	debug problem point
+		ArrayIndexOut Exception
+ArrayIndexOut Exception
+	debug further
+	reproduce the error outside
+	problem point:
+		inner array
+	cause:
+		arr[-1] made error

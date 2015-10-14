@@ -1,0 +1,13 @@
+{"message":"this is plain message","@version":"1","@timestamp":"2015-10-12T11:16:23.596Z","host":"mert.local","path":"/Users/mertnuhoglu/projects/study/study/logstash/plain.log"}
+{"message":"this is second message","@version":"1","@timestamp":"2015-10-12T11:16:23.597Z","host":"mert.local","path":"/Users/mertnuhoglu/projects/study/study/logstash/plain.log"}
+{"message":"hello istanbul","@version":"1","@timestamp":"2015-10-12T11:16:23.598Z","host":"mert.local","path":"/Users/mertnuhoglu/projects/study/study/logstash/plain.log"}
+{"message":"hello ankara","@version":"1","@timestamp":"2015-10-12T11:16:23.598Z","host":"mert.local","path":"/Users/mertnuhoglu/projects/study/study/logstash/plain.log"}
+{"message":"hello trabzon","@version":"1","@timestamp":"2015-10-12T11:16:23.598Z","host":"mert.local","path":"/Users/mertnuhoglu/projects/study/study/logstash/plain.log"}
+{"message":"hello santiago","@version":"1","@timestamp":"2015-10-12T11:16:23.599Z","host":"mert.local","path":"/Users/mertnuhoglu/projects/study/study/logstash/plain.log"}
+{"message":"this is plain message","@version":"1","@timestamp":"2015-10-12T11:17:19.835Z","host":"mert.local","path":"/Users/mertnuhoglu/projects/study/study/logstash/plain.log"}
+{"message":"this is second message","@version":"1","@timestamp":"2015-10-12T11:17:19.836Z","host":"mert.local","path":"/Users/mertnuhoglu/projects/study/study/logstash/plain.log"}
+{"message":"hello istanbul","@version":"1","@timestamp":"2015-10-12T11:17:19.836Z","host":"mert.local","path":"/Users/mertnuhoglu/projects/study/study/logstash/plain.log"}
+{"message":"hello ankara","@version":"1","@timestamp":"2015-10-12T11:17:19.837Z","host":"mert.local","path":"/Users/mertnuhoglu/projects/study/study/logstash/plain.log"}
+{"message":"hello trabzon","@version":"1","@timestamp":"2015-10-12T11:17:19.837Z","host":"mert.local","path":"/Users/mertnuhoglu/projects/study/study/logstash/plain.log"}
+{"message":"hello santiago","@version":"1","@timestamp":"2015-10-12T11:17:19.838Z","host":"mert.local","path":"/Users/mertnuhoglu/projects/study/study/logstash/plain.log"}
+{"message":"gracias mundo","@version":"1","@timestamp":"2015-10-12T11:17:19.838Z","host":"mert.local","path":"/Users/mertnuhoglu/projects/study/study/logstash/plain.log"}

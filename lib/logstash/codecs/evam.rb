@@ -86,8 +86,21 @@ class LogStash::Codecs::Evam < LogStash::Codecs::Base
     return result
   end
 
+  def split_path(dict, path)
+    keys = path.split('.')
+    for k in keys
+      dict = dict[k]
+    end
+    if dict.is_a?(String)
+      return dict
+    else
+      return ''
+    end
+  end
+
   def find_actor(dict, actor_key)
-    ihash(dict, actor_key)
+    # ihash(dict, actor_key)
+    split_path(dict, actor_key)
   end
 
   def hash2evam(dict)

@@ -1,0 +1,7 @@
+{"apple":"1","banana":"2","@version":"1","@timestamp":"2015-10-12T11:41:50.833Z","host":"mert.local","path":"/Users/mertnuhoglu/projects/study/study/logstash/evam.log"}
+{"apple":"1","banana":"2","@version":"1","@timestamp":"2015-10-12T11:41:50.836Z","host":"mert.local","path":"/Users/mertnuhoglu/projects/study/study/logstash/evam.log"}
+{"apple":"5","banana":"7","@version":"1","@timestamp":"2015-10-12T11:41:50.838Z","host":"mert.local","path":"/Users/mertnuhoglu/projects/study/study/logstash/evam.log"}
+{"apple":"1","banana":"2","@version":"1","@timestamp":"2015-10-12T11:42:05.920Z","host":"mert.local","path":"/Users/mertnuhoglu/projects/study/study/logstash/evam.log"}
+{"apple":"1","banana":"2","@version":"1","@timestamp":"2015-10-12T11:42:05.922Z","host":"mert.local","path":"/Users/mertnuhoglu/projects/study/study/logstash/evam.log"}
+{"apple":"5","banana":"7","@version":"1","@timestamp":"2015-10-12T11:42:05.924Z","host":"mert.local","path":"/Users/mertnuhoglu/projects/study/study/logstash/evam.log"}
+{"apple":"5","banana":"7","@version":"1","@timestamp":"2015-10-12T11:42:05.926Z","host":"mert.local","path":"/Users/mertnuhoglu/projects/study/study/logstash/evam.log"}

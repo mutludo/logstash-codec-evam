@@ -1,0 +1,12 @@
+%{message}
+%{message}
+%{message}
+%{message}
+%{message}
+%{message}
+{"city":{"actor":"0015"},"foo":"s31","bar":{"baz":["a","b"]},"@version":"1","@timestamp":"2015-10-13T16:20:10.713Z","host":"mert-2","path":"/Users/mertnuhoglu/projects/study/study/logstash/json.log"}
+{"city":{"actor":"0016"},"foo":"s32","bar":{"baz":["a","c"]},"@version":"1","@timestamp":"2015-10-13T16:20:10.716Z","host":"mert-2","path":"/Users/mertnuhoglu/projects/study/study/logstash/json.log"}
+{"city":{"actor":"0021"},"foo":"s32","bar":{"baz":["a","c"]},"@version":"1","@timestamp":"2015-10-13T16:20:10.717Z","host":"mert-2","path":"/Users/mertnuhoglu/projects/study/study/logstash/json.log"}
+{"city":{"actor":"0015"},"foo":"s31","bar":{"baz":["a","b"]},"@version":"1","@timestamp":"2015-10-13T16:21:14.827Z","host":"mert-2","path":"/Users/mertnuhoglu/projects/study/study/logstash/json.log"}
+{"city":{"actor":"0016"},"foo":"s32","bar":{"baz":["a","c"]},"@version":"1","@timestamp":"2015-10-13T16:21:14.831Z","host":"mert-2","path":"/Users/mertnuhoglu/projects/study/study/logstash/json.log"}
+{"city":{"actor":"0022"},"foo":"s32","bar":{"baz":["a","c"]},"@version":"1","@timestamp":"2015-10-13T16:21:14.832Z","host":"mert-2","path":"/Users/mertnuhoglu/projects/study/study/logstash/json.log"}
