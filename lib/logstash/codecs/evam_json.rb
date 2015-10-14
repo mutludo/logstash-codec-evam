@@ -107,7 +107,9 @@ class LogStash::Codecs::Evam < LogStash::Codecs::Base
     actor_id = find_actor(dict, @actor)
     params = 'a,' + actor_id + ',' + @scenario + ',' + @event
     # params = 'a,' + scenario + ',' + event
-    pairs = hash2pairs(dict)
+    pairs = unnest(dict).
+        map { |k, v| "#{k},#{v}" }.
+        join(',')
     evam = params + ',' + pairs + '~'
     evam
   end
@@ -139,19 +141,10 @@ class LogStash::Codecs::Evam < LogStash::Codecs::Base
 
   # def decode
 
-  def hash2pairs(dict)
-    pairs = unnest(dict).
-        map { |k, v| "#{k},#{v}" }.
-        join(',')
-    pairs
-  end
-
-
   public
   def event2evam(event)
     json = event.to_json
     dict = LogStash::Json.load(json)
-    ["message", "@version", "@timestamp", "version", "host", "path"].each { |k| dict.delete(k) }
     hash2evam(dict)
   end
 
