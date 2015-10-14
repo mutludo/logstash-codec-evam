@@ -14,23 +14,32 @@ Kolaylık olsun diye, isterseniz şu 3 dosyayı logstash'in kurulu olduğu kök 
 
 	bin/plugin install logstash-codec-evam-2.0.1.gem
 
-Şimdi logstash'i çalıştıracağız. Ancak önce evam07.conf dosyasını açın ve burada benim hardcode yazdığım log dosyalarının path'lerini değiştirin. Path'leri absolute path olarak yazmanız şart, relative path'ler hata üretiyor. İki tane hard coded path var:
+Şimdi logstash'i çalıştırmamız lazım, fakat önce dosya path'lerini güncelleyelim.
 
-	path => "/Users/mertnuhoglu/projects/study/study/logstash/json.log"
-	path => "/Users/mertnuhoglu/projects/study/study/logstash/output_evam07.log"
+## Path güncelleme
 
-İlki input alınacak json verilerinin bulunduğu log dosyası, ikincisi evam formatındaki event loglarının yazılacağı log dosyası.
+Önce evam07.conf ve evam08.conf dosyalarını açın ve burada benim hardcode yazdığım dosyaların path'lerini değiştirin. Path'leri absolute path olarak yazmanız şart, relative path'ler hata üretiyor. path değişkenleri şuna benzer şekilde:
 
-Gerçek koşullarda, bu input ve output yerine logstash'in desteklediği tüm input sourcelar ve output destinationlar yazılabilir.
+	path => ["/Users/mertnuhoglu/projects/ruby/logstash_plugins/logstash-codec-evam/examples/customer3.csv"]
 
-Bizim durumumuzda, evam sunucusuna tcp üzerinden bağlantı yapılacağından, output'taki file yerine şöyle bir konfigürasyon konulacak:
+## netcat tcp server çalıştırma
 
-	tcp {
-			host => "localhost"
-			port => 6789
-	}
+Logstash'i tcp portunda test etmek için, önce netcat adlı tcp sunucuyu çalıştıralım. Bunun için terminalde yeni bir sekme açın ve şu komutu verin:
 
-Birden çok sayıda output ve input tanımlanabilir. Dolayısıyla, debug etmek için, tcp output konfigürasyonu dışında stdout ve file konfigürasyonlarını da tutabilirsiniz.
+	netcat -l -p 8888
+
+## Logstash çalıştırma
+
+Şimdi logstash'i evam07.conf ve evam08.conf için çalıştırabiliriz. Sırayla yapabilirsiniz. evam07'de csv dosyasından girdi almayı test ediliyor. evam08'de json dosyasından veri alma test ediliyor.
+
+	bin/logstash -f evam07.conf
+	bin/logstash -f evam08.conf
+
+Logstash'i çalıştırıp "Logstash startup completed" mesajını gördükten sonra, ilgili girdi dosyasını değiştirip kaydedin. Bu durumda, gelen verilerin işlendiğini görmeniz lazım. Hem netcat tcp sunucusunda çıktıyı görmelisiniz, hem de logstash'i başlattığınız kabukta.
+
+# Ek Bilgiler
+
+## Test verisi girdi kaynağı
 
 Gerçek koşullarda, input yerine json verilerinin çekileceği kaynak neyse onun yazılması lazım. Fakat plugin'in doğru çalışıp çalışmadığını test etmek için, file kaynağı kullanıp test yapabilirsiniz.
 
