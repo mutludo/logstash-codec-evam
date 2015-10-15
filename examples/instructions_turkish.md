@@ -39,7 +39,7 @@ Logstash'i çalıştırıp "Logstash startup completed" mesajını gördükten s
 
 # Ek Bilgiler
 
-## Test verisi girdi kaynağı
+# Test verisi girdi kaynağı
 
 Gerçek koşullarda, input yerine json verilerinin çekileceği kaynak neyse onun yazılması lazım. Fakat plugin'in doğru çalışıp çalışmadığını test etmek için, file kaynağı kullanıp test yapabilirsiniz.
 
