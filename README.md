@@ -6,7 +6,7 @@ It is fully free and fully open source. The license is Apache 2.0, meaning you a
 
 ## Installation
 
-First, you need to install this plugin into the Logstash. Open a terminal and go to the root directory of Logstash software. Run the following command:
+First, you need to install this plugin into Logstash. Open a terminal and go to the root directory of Logstash software. Run the following command:
 
 	bin/plugin install /path/to/logstash-codec-evam-2.0.1.gem
 
